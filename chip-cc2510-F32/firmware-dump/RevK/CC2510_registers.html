@@ -1,0 +1,60 @@
+<html><head>
+<style>
+body {background-color:#dde;}
+caption {font-weight:bold; font-size:16px;margin-left:30px}
+th { text-align:left; background-color:#f00; color:#fff}
+table { background-color: #eec; font-size:9px;margin:10px}
+</style>
+</head>
+<body><table border=1 cellpadding=5 cellspacing=0>
+<caption>CC2510 registers</caption>
+<tr><th>Name</th><th>Address</th><th>Value</th>
+<th>Description</th></tr><tr><td>SYNC1<td>0xDF00</td><td>0xD3</td><td>Sync Word, High Byte </td></tr>
+<tr><td>SYNC0<td>0xDF01</td><td>0x91</td><td>Sync Word, Low Byte </td></tr>
+<tr><td>PKTLEN<td>0xDF02</td><td>0xFF</td><td>Packet Length  </td></tr>
+<tr><td>PKTCTRL1<td>0xDF03</td><td>0x04</td><td>Packet Automation Control </td></tr>
+<tr><td>PKTCTRL0<td>0xDF04</td><td>0x05</td><td>Packet Automation Control </td></tr>
+<tr><td>ADDR<td>0xDF05</td><td>0x00</td><td>Device Address </td></tr>
+<tr><td>CHANNR<td>0xDF06</td><td>0x03</td><td>Channel Number </td></tr>
+<tr><td>FSCTRL1<td>0xDF07</td><td>0x0A</td><td>Frequency Synthesizer Control </td></tr>
+<tr><td>FSCTRL0<td>0xDF08</td><td>0x00</td><td>Frequency Synthesizer Control </td></tr>
+<tr><td>FREQ2<td>0xDF09</td><td>0x5D</td><td>Frequency Control Word, High Byte </td></tr>
+<tr><td>FREQ1<td>0xDF0A</td><td>0x44</td><td>Frequency Control Word, Middle Byte </td></tr>
+<tr><td>FREQ0<td>0xDF0B</td><td>0xEC</td><td>Frequency Control Word, Low Byte </td></tr>
+<tr><td>MDMCFG4<td>0xDF0C</td><td>0x2D</td><td>Modem configuration </td></tr>
+<tr><td>MDMCFG3<td>0xDF0D</td><td>0x3B</td><td>Modem Configuration </td></tr>
+<tr><td>MDMCFG2<td>0xDF0E</td><td>0x73</td><td>Modem Configuration </td></tr>
+<tr><td>MDMCFG1<td>0xDF0F</td><td>0x23</td><td>Modem Configuration </td></tr>
+<tr><td>MDMCFG0<td>0xDF10</td><td>0x3B</td><td>Modem Configuration </td></tr>
+<tr><td>DEVIATN<td>0xDF11</td><td>0x00</td><td>Modem Deviation Setting </td></tr>
+<tr><td>MCSM2<td>0xDF12</td><td>0x07</td><td>Main Radio Control State Machine Configuration </td></tr>
+<tr><td>MCSM1<td>0xDF13</td><td>0x30</td><td>Main Radio Control State Machine Configuration </td></tr>
+<tr><td>MCSM0<td>0xDF14</td><td>0x14</td><td>Main Radio Control State Machine Configuration </td></tr>
+<tr><td>FOCCFG<td>0xDF15</td><td>0x1D</td><td>Frequency Offset Compensation Configuration </td></tr>
+<tr><td>BSCFG<td>0xDF16</td><td>0x1C</td><td>Bit Synchronization Configuration </td></tr>
+<tr><td>AGCCTRL2<td>0xDF17</td><td>0xC7</td><td>AGC Control  </td></tr>
+<tr><td>AGCCTRL1<td>0xDF18</td><td>0x00</td><td>AGC Control  </td></tr>
+<tr><td>AGCCTRL0<td>0xDF19</td><td>0xB2</td><td>AGC Control  </td></tr>
+<tr><td>FREND1<td>0xDF1A</td><td>0xB6</td><td>Front End RX Configuration </td></tr>
+<tr><td>FREND0<td>0xDF1B</td><td>0x10</td><td>Front End TX Configuration </td></tr>
+<tr><td>FSCAL3<td>0xDF1C</td><td>0xEA</td><td>Frequency Synthesizer Calibration </td></tr>
+<tr><td>FSCAL2<td>0xDF1D</td><td>0x0A</td><td>Frequency Synthesizer Calibration </td></tr>
+<tr><td>FSCAL1<td>0xDF1E</td><td>0x00</td><td>Frequency Synthesizer Calibration </td></tr>
+<tr><td>FSCAL0<td>0xDF1F</td><td>0x11</td><td>Frequency Synthesizer Calibration </td></tr>
+<tr><td>TEST2<td>0xDF23</td><td>0x88</td><td>Various Test Settings </td></tr>
+<tr><td>TEST1<td>0xDF24</td><td>0x31</td><td>Various Test Settings </td></tr>
+<tr><td>TEST0<td>0xDF25</td><td>0x09</td><td>Various Test Settings </td></tr>
+<tr><td>PA_TABLE0<td>0xDF2E</td><td>0xFE</td><td>PA Power Setting </td></tr>
+<tr><td>IOCFG2<td>0xDF2F</td><td>0x00</td><td>Radio Test Signal Configuration (P1_7) </td></tr>
+<tr><td>IOCFG1<td>0xDF30</td><td>0x00</td><td>Radio Test Signal Configuration (P1_6)  </td></tr>
+<tr><td>IOCFG0<td>0xDF31</td><td>0x06</td><td>Radio Test Signal Configuration (P1_5)  </td></tr>
+<tr><td>PARTNUM<td>0xDF36</td><td>0x81</td><td>Chip ID[15:8] </td></tr>
+<tr><td>VERSION<td>0xDF37</td><td>0x04</td><td>Chip ID[7:0] </td></tr>
+<tr><td>FREQEST<td>0xDF38</td><td>0x00</td><td>Frequency Offset Estimate from Demodulator </td></tr>
+<tr><td>LQI<td>0xDF39</td><td>0x7F</td><td>Demodulator Estimate for Link Quality </td></tr>
+<tr><td>RSSI<td>0xDF3A</td><td>0x80</td><td>Received Signal Strength Indication </td></tr>
+<tr><td>MARCSTATE<td>0xDF3B</td><td>0x01</td><td>Main Radio Control State Machine State </td></tr>
+<tr><td>PKTSTATUS<td>0xDF3C</td><td>0x00</td><td>Packet Status </td></tr>
+<tr><td>VCO_VC_DAC<td>0xDF3D</td><td>0xA4</td><td>Current Setting from PLL Calibration Module </td></tr>
+</table>
+</body><html>
