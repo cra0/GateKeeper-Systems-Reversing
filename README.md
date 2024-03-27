@@ -2,29 +2,37 @@
 
 ## About
 
-This repo contains the findings from reverse engineering of a smart wheel attached to a shopping cart/trolley used by various supermarkets.
+This repository houses the results from an initial reverse engineering effort focused on the smart wheel used by various supermarkets.
 
-### 8khz_unlock_lock
+![signal](docs/smart-wheel.png)
 
-This contains an example Lock & Unlock Signal that can be played back through speakers held close to the wheel. It was captured using a custom VLF [loop antenna](https://en.wikipedia.org/wiki/Loop_antenna) I constructed.
 
-The lock/unlock codes that seems to be used for all GateKeeper Smart Wheels are:
+### Unlocking and Locking Mechanism (8khz_unlock_lock)
+This section showcases a practical example of Lock and Unlock signals that can be emitted through a speaker placed near the wheel. The signals were recorded with a custom-built Very Low Frequency (VLF) loop antenna. More details about loop antennas can be found [here](https://en.wikipedia.org/wiki/Loop_antenna).
 
-- Lock `10001110` (0x8E)
-- Unlock `01110001` (0x71)
+The universally applied lock/unlock codes for GateKeeper's Smart Wheels are:
 
-![chip](docs/signal_screenshot.png)
+Lock Code: 10001110 (Hexadecimal: 0x8E)
+Unlock Code: 01110001 (Hexadecimal: 0x71)
+
+![signal](docs/signal_screenshot.png)
 
 ### chip-cc2510-F32
 
 This contains memory dumps of the firmware from CC2510 chips.
 
-![chipRevJ](chip-cc2510-F32/soc-photos/SOC_RevJ.jpg)
-![chipRevK](chip-cc2510-F32/soc-photos/SOC_RevK.jpg)
+<img src="chip-cc2510-F32/soc-photos/SOC_RevJ.jpg" width="200" alt="SOC-RevJ">
+<img src="chip-cc2510-F32/soc-photos/SOC_RevK.jpg" width="200" alt="SOC-RevK">
 
-### WIP
+Each revision folder also contains a radio register dump html with values taken live from the chips.
 
-This repo obviously doesn't have much however my aim is to figure out what other functionality is built into the firmware thats a bit more then just a [replay attack](https://en.wikipedia.org/wiki/Replay_attack).
+RevN Unfortunately has a DEBUG_READ lock and possibly I will need to follow something [similar to this blog post](https://zeus.ugent.be/blog/22-23/reverse_engineering_epaper/) to get it's memory dumped out.
+
+### Futhernotes
+
+As it stands, the repository's contents are foundational. The goal moving forward is to uncover additional embedded functionalities within the firmware that extend beyond basic [replay attack](https://en.wikipedia.org/wiki/Replay_attack).
+
+If you wish to help contribute or discuss anything feel free to get in touch.
 
 ## References
 
