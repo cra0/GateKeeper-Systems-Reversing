@@ -36,10 +36,7 @@ If you wish to help contribute or discuss anything feel free to get in touch.
 
 ## References
 
-1. https://www.ti.com/product/CC2510
-
-2. https://infocon.org/cons/DEF%20CON/DEF%20CON%2029/DEF%20CON%2029%20presentations/Joseph%20Gabay%20-%20Dos-%20Denial%20of%20Shopping%20%E2%80%93%20Analyzing%20and%20Exploiting%20(Physical)%20Shopping%20Cart%20Immobilization%20Systems.pdf
-
-3. https://www.tmplab.org/2008/06/18/consumer-b-gone/
-
-4. https://web.archive.org/web/20170504023929/http://www.gatekeepersystems.com/sol_cc_cc_how_it_works.php
+1. [Texas Instruments CC2510 Product Page](https://www.ti.com/product/CC2510)
+2. [Denial of Shopping - Exploiting Shopping Cart Immobilization Systems, DEF CON 29 Presentation](https://infocon.org/cons/DEF%20CON/DEF%20CON%2029/DEF%20CON%2029%20presentations/Joseph%20Gabay%20-%20Dos-%20Denial%20of%20Shopping%20%E2%80%93%20Analyzing%20and%20Exploiting%20(Physical)%20Shopping%20Cart%20Immobilization%20Systems.pdf)
+3. [Consumer B-Gone](https://www.tmplab.org/2008/06/18/consumer-b-gone/)
+4. [How GateKeeper Systems Work (Archived)](https://web.archive.org/web/20170504023929/http://www.gatekeepersystems.com/sol_cc_cc_how_it_works.php)
