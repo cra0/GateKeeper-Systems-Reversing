@@ -19,7 +19,8 @@ The lock/unlock codes that seems to be used for all GateKeeper Smart Wheels are:
 
 This contains memory dumps of the firmware from CC2510 chips.
 
-![chip](chip-cc2510-F32/soc-photos/SOCPhoto1.jpg)
+![chipRevJ](chip-cc2510-F32/soc-photos/SOC_RevJ.jpg)
+![chipRevK](chip-cc2510-F32/soc-photos/SOC_RevK.jpg)
 
 ### WIP
 
