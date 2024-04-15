@@ -24,6 +24,9 @@ This contains memory dumps of the firmware from CC2510 chips.
 <img src="chip-cc2510-F32/soc-photos/SOC_RevJ.jpg" width="200" alt="SOC-RevJ">
 <img src="chip-cc2510-F32/soc-photos/SOC_RevK.jpg" width="200" alt="SOC-RevK">
 
+Here is the pinout illustrated:
+<img src="chip-cc2510-F32/soc-photos/PINOUT_CC2510.jpg" width="405" alt="SOC-PINS">
+
 Each revision folder also contains a radio register dump html with values taken live from the chips.
 
 RevN Unfortunately has a DEBUG_READ lock and possibly I will need to follow something [similar to this blog post](https://zeus.ugent.be/blog/22-23/reverse_engineering_epaper/) to get it's memory dumped out.
