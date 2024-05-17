@@ -7,6 +7,9 @@ This repository houses the results from an initial reverse engineering effort fo
 ![signal](docs/smart-wheel.png)
 
 
+## (8KHz Operation)
+
+
 ### Unlocking and Locking Mechanism (8khz_unlock_lock)
 This section showcases a practical example of Lock and Unlock signals that can be emitted through a speaker placed near the wheel. The signals were recorded with a custom-built Very Low Frequency (VLF) loop antenna. More details about loop antennas can be found [here](https://en.wikipedia.org/wiki/Loop_antenna).
 
@@ -16,6 +19,29 @@ Lock Code: 10001110 (Hexadecimal: 0x8E)
 Unlock Code: 01110001 (Hexadecimal: 0x71)
 
 ![signal](docs/signal_screenshot.png)
+
+### Device Information Query
+
+Through the usuage of one of the Key tools I also discovered this specific 8khz signal that is sent to the smart wheel.
+It will then return back some information including:
+
+- Battery voltage
+- dALE (eg 09.19)
+- rL (7.10)
+- id1 (0911)
+- id2 (2255)
+
+
+![signal2](docs/query_device_signal.png)
+
+This can also be sent via the 2.4GHz signal.
+
+## (2.4GHz Operation)
+
+The smart wheels also support 2.4GHz functionality. In the past it has been identified by others that the wheel can be unlocked
+using 2.4GHz however I have identified there is also the ability to lock the wheel as well.
+
+## SOC (MCU)
 
 ### chip-cc2510-F32
 
@@ -31,7 +57,7 @@ Each revision folder also contains a radio register dump html with values taken 
 
 RevN Unfortunately has a DEBUG_READ lock and possibly I will need to follow something [similar to this blog post](https://zeus.ugent.be/blog/22-23/reverse_engineering_epaper/) to get it's memory dumped out.
 
-### Futhernotes
+## Futhernotes
 
 As it stands, the repository's contents are foundational. The goal moving forward is to uncover additional embedded functionalities within the firmware that extend beyond basic [replay attack](https://en.wikipedia.org/wiki/Replay_attack).
 
