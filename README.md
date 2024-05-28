@@ -25,8 +25,8 @@ Unlock Code: 01110001 (Hexadecimal: 0x71)
 Through the usuage of one of the Key tools I also discovered this specific 8khz signal that is sent to the smart wheel.
 It will then return back some information including:
 
-- Battery voltage
-- dALE (eg 09.19)
+- Battery voltage (3.0)
+- date (eg 09.19) (Manufactory date perhaps?)
 - rL (7.10)
 - id1 (0911)
 - id2 (2255)
