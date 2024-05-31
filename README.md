@@ -20,6 +20,9 @@ Unlock Code: 01110001 (Hexadecimal: 0x71)
 
 ![signal](docs/signal_screenshot.png)
 
+You can find a reference to this in the firmware:
+![8051_fw_lockunlock](docs/8051_fw_lockunlock.png)
+
 ### Device Information Query
 
 Through the usage of one of the Key tools I also discovered this specific 8khz signal that is sent to the smart wheel.
