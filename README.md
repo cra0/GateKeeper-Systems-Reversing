@@ -22,19 +22,24 @@ Unlock Code: 01110001 (Hexadecimal: 0x71)
 
 ### Device Information Query
 
-Through the usuage of one of the Key tools I also discovered this specific 8khz signal that is sent to the smart wheel.
-It will then return back some information including:
-
-- Battery voltage (3.0)
-- date (eg 09.19) (Manufactory date perhaps?)
-- rL (7.10)
-- id1 (0911)
-- id2 (2255)
-
+Through the usage of one of the Key tools I also discovered this specific 8khz signal that is sent to the smart wheel.
 
 ![signal2](docs/query_device_signal.png)
 
-This can also be sent via the 2.4GHz signal.
+BIN: `1011010`
+HEX: `0x5A`
+
+Once the wheel receives this it will then return back statistical information including:
+
+- Battery voltage e.g. (3.0v)
+- date e.g. (09.19) (Manufactory date perhaps?)
+- rL e.g. (7.10)
+- id1 e.g. (0911)
+- id2 e.g. (2255)
+
+
+
+This data can also be sent from the wheel via the 2.4GHz signal.
 
 ## (2.4GHz Operation)
 
