@@ -2,7 +2,7 @@
 
 ## About
 
-This repository houses the results from an initial reverse engineering effort focused on the smart wheel used by various supermarkets.
+This repository houses the results from an initial reverse engineering effort focused on the smart wheel used by various supermarkets. This is purely for research and education on how embedded devices work.
 
 ![signal](docs/smart-wheel.png)
 
@@ -35,6 +35,7 @@ HEX: `0x5A`
 Once the wheel receives this it will then return back statistical information including:
 
 - Battery voltage e.g. (3.0v)
+- Cycle Count (How many times it was locked/unlocked)
 - date e.g. (09.19) (Manufactory date perhaps?)
 - rL e.g. (7.10)
 - id1 e.g. (0911)
